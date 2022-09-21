@@ -1,6 +1,6 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="index.html">PRODIGY</a>
+    <a class="navbar-brand ps-3" href="index.html">Aimindia</a>
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
     <!-- Navbar Search-->
@@ -31,39 +31,39 @@
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
-                    <div class="sb-sidenav-menu-heading">Core</div>
+                    {{-- <div class="sb-sidenav-menu-heading">Core</div> --}}
                     <a class="nav-link" href="/admin/dashboard">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>
-                    <div class="sb-sidenav-menu-heading">Interface</div>
+                    {{-- <div class="sb-sidenav-menu-heading">Interface</div> --}}
+                    <a class="nav-link" href="/admin/organisation">
+                        <div class="sb-nav-link-icon"><i class="fa fa-bank"></i></div>
+                        Organisation
+                    </a>
+                    <a class="nav-link" href="/admin/banner">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-image"></i></div>
+                        Banner
+                    </a>
+                    <a class="nav-link" href="/admin/testimonial">
+                        <div class="sb-nav-link-icon"><i class="fa fa-quote-left"></i></div>
+                        Testimonials
+                    </a>
 
-                    <a class="nav-link" href="/admin/banner-management">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Banner Management
+                    <a class="nav-link" href="/admin/gallery">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-image"></i></div>
+                       Gallery
                     </a>
-                    <a class="nav-link" href="/admin/on-mouce-hover-management">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        On Mouce Hover Management
+                    <a class="nav-link" href="/admin/our-team">
+                        <div class="sb-nav-link-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                        Our Team
                     </a>
-                    <a class="nav-link" href="/admin/form-management">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Form Management
-                    </a>
-                    <a class="nav-link" href="/admin/page-content-management">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                       Page Content Management
-                    </a>
-                    <a class="nav-link" href="/admin/design-center-cms">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Design Center Page CMS
-                    </a>
-                    {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#cmspages" aria-expanded="false" aria-controls="cmspages">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                    {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false" aria-controls="about">
+                        <div class="sb-nav-link-icon"><i class="fa fa-info" aria-hidden="true"></i></div>
                         CMS Pages
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="cmspages" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <div class="collapse" id="about" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="/admin/about-us">About Us</a>
                             <a class="nav-link" href="/admin/home-page-footer-cms">Home Page Footer CMS</a>
@@ -71,14 +71,27 @@
                         </nav>
                     </div> --}}
 
-                    <a class="nav-link" href="/admin/service-management">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Service Management
+                    <a class="nav-link" href="/admin/cms">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
+                        Our Works & Be Friend Management
                     </a>
-                    {{-- <a class="nav-link" href="/admin/calculator-page-cms">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Calculator Page CMS
-                    </a> --}}
+                    <a class="nav-link" href="/admin/blog">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-blog"></i></div>
+                        Blog
+                    </a>
+                    <a class="nav-link" href="/admin/activities">
+                        <div class="sb-nav-link-icon"><i class="fa fa-history" aria-hidden="true"></i></div>
+                        Activities
+                    </a>
+
+                    <a class="nav-link" href="/admin/contact">
+                        <div class="sb-nav-link-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        Contact & Subscribe Listing
+                    </a>
+                    <a class="nav-link" href="/admin/site-setting">
+                        <div class="sb-nav-link-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                        Site Settings
+                    </a>
                     {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#service" aria-expanded="false" aria-controls="service">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                         Services
@@ -94,7 +107,7 @@
             </div>
             <div class="sb-sidenav-footer">
                 <div class="small">Logged in as:</div>
-                PRODIGY Admin
+                Aimindia Admin
             </div>
         </nav>
     </div>

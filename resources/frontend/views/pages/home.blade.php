@@ -3,10 +3,10 @@
 <div class="banner px-0">
     <div id="owl-demomain" class="owl-carousel owl-theme">
         <div class="item">
-            <img src="img/Awareness-Initiatives-1920-x-580.jpg" />
+            <img src="{{asset('assets/frontend/img/Awareness-Initiatives-1920-x-580.jpg')}}" />
         </div>
         <div class="item">
-            <img src="img/Awareness-Initiatives-1920-x-580.jpg" />
+            <img src="{{asset('assets/frontend/img/Awareness-Initiatives-1920-x-580.jpg')}}" />
         </div>
     </div>
 </div>
@@ -16,7 +16,7 @@
         <div class="row m-auto col-md-12 px-0">
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="img/help01.png" />
+                    <img src="{{asset('assets/frontend/img/help01.png')}}" />
                     <h4>GIVE DONATION</h4>
                     <p>We rely on your generosity to run our projects Your donation is eligible for ....</p>
                     <div class="btn">Read More</div>
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-4">
                 <div class="service-item one-s">
-                    <img src="img/help02.png" />
+                    <img src="{{asset('assets/frontend/img/help02.png')}}" />
                     <h4>BECOME A VOLUNTEER</h4>
                     <p>Volunteering does not require a special degree or prior experience. It ..</p>
                     <div class="btn">Read More</div>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="img/help03.png" />
+                    <img src="{{asset('assets/frontend/img/help03.png')}}" />
                     <h4>SPONSOR PROJECTS</h4>
                     <p>You can sponsor or or more project either by regular or onetime payment..</p>
                     <div class="btn">Read More</div>
@@ -49,16 +49,16 @@
             <div class="col-md-6 text-md-left text-center">
                 <div id="owlwelc" class="owl-carousel owl-theme px-3">
                     <div class="item">
-                        <img src="img/about.png" alt="about.png" />
+                        <img src="{{asset('assets/frontend/img/about.png')}}" alt="about.png" />
                     </div>
                     <div class="item">
-                        <img src="img/about.png" alt="about.png" />
+                        <img src="{{asset('assets/frontend/img/about.png')}}" alt="about.png" />
                     </div>
                     <div class="item">
-                        <img src="img/about.png" alt="about.png" />
+                        <img src="{{asset('assets/frontend/img/about.png')}}" alt="about.png" />
                     </div>
                     <div class="item">
-                        <img src="img/about.png" alt="about.png" />
+                        <img src="{{asset('assets/frontend/img/about.png')}}" alt="about.png" />
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <li>
                         <a href="javascript:void(0);">
                             <div class="img-in">
-                                <img src="img/ac1.jpg" alt="" />
+                                <img src="{{asset('assets/frontend/img/ac1.jpg')}}" alt="" />
                             </div>
                             <div class="mr-auto">
                                 <h5>AIM2FIGHTCOVID</h5>
@@ -115,7 +115,7 @@
                     <li>
                         <a href="javascript:void(0);">
                             <div class="img-in">
-                                <img src="img/ac2.jpg" alt="" />
+                                <img src="{{asset('assets/frontend/img/ac2.jpg')}}" alt="" />
                             </div>
                             <div class="mr-auto">
                                 <h5>FOREST CLEANING</h5>
@@ -128,7 +128,7 @@
                     <li>
                         <a href="javascript:void(0);">
                             <div class="img-in">
-                                <img src="img/ac3.jpg" alt="" />
+                                <img src="{{asset('assets/frontend/img/ac3.jpg')}}" alt="" />
                             </div>
                             <div class="mr-auto">
                                 <h5>SAPLINGS DISTRIBUTION</h5>
@@ -141,7 +141,7 @@
                     <li>
                         <a href="javascript:void(0);">
                             <div class="img-in">
-                                <img src="img/ac4.jpg" alt="" />
+                                <img src="{{asset('assets/frontend/img/ac4.jpg')}}" alt="" />
                             </div>
                             <div class="mr-auto">
                                 <h5>SEMINARS AND SYMPOSIUMS</h5>
@@ -267,7 +267,7 @@
                 <div class="item">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/sd.jpg" />
+                            <img src="{{asset('assets/frontend/img/sd.jpg')}}" />
                         </div>
                         <h3 class="title">Sushmeli Dutta</h3>
                         <span class="post">Vice President Cultural</span>
@@ -299,7 +299,7 @@
                 <div class="item">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/sg.jpg" />
+                            <img src="{{asset('assets/frontend/img/sg.jpg')}}" />
                         </div>
                         <h3 class="title">Sushmeli Dutta</h3>
                         <span class="post">Vice President Cultural</span>
@@ -315,7 +315,7 @@
                 <div class="item">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/croy.jpg" />
+                            <img src="{{asset('assets/frontend/img/croy.jpg')}}" />
                         </div>
                         <h3 class="title">Sushmeli Dutta</h3>
                         <span class="post">Vice President Cultural</span>
@@ -331,7 +331,7 @@
                 <div class="item">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/am.jpg" />
+                            <img src="{{asset('assets/frontend/img/am.jpg')}}" />
                         </div>
                         <h3 class="title">Sushmeli Dutta</h3>
                         <span class="post">Vice President Cultural</span>
@@ -356,37 +356,37 @@
             <div id="owlbar" class="tips-area owl-carousel owl-theme px-3">
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp1.jpg" alt="1.png" />
+                        <img src="{{asset('assets/frontend/img/sp1.jpg')}}" alt="1.png" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp6.png" alt="1.png" />
+                        <img src="{{asset('assets/frontend/img/sp6.png')}}" alt="1.png" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp5.png" alt="1.png" />
+                        <img src="{{asset('assets/frontend/img/sp5.png')}}" alt="1.png" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp14.jpeg" alt="1.png" />
+                        <img src="{{asset('assets/frontend/img/sp14.jpeg')}}" alt="1.png" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp15.jpg" alt="sp15.jpg" />
+                        <img src="{{asset('assets/frontend/img/sp15.jpg')}}" alt="sp15.jpg" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp17.png" alt="sp15.jpg" />
+                        <img src="{{asset('assets/frontend/img/sp17.png')}}" alt="sp15.jpg" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="g-img">
-                        <img src="img/sp8.jpg" alt="sp15.jpg" />
+                        <img src="{{asset('assets/frontend/img/sp8.jpg')}}" alt="sp15.jpg" />
                     </div>
                 </div>
             </div>
@@ -403,7 +403,7 @@
             <div class="col-md-4 col-xl-3">
                 <div class="blog_content">
                     <div class="on-inimg">
-                        <img src="img/blog1.jpg" />
+                        <img src="{{asset('assets/frontend/img/blog1.jpg')}}" />
                     </div>
                     <div class="dtls-on">
                         <h4>Healthy food keeps a man healthy</h4>
@@ -420,7 +420,7 @@
             <div class="col-md-4 col-xl-3">
                 <div class="blog_content">
                     <div class="on-inimg">
-                        <img src="img/blog2.jpg" />
+                        <img src="{{asset('assets/frontend/img/blog2.jpg')}}" />
                     </div>
                     <div class="dtls-on">
                         <h4>Corona Kavach – Some Useful Information</h4>
@@ -437,7 +437,7 @@
             <div class="col-md-4 col-xl-3">
                 <div class="blog_content">
                     <div class="on-inimg">
-                        <img src="img/blog3.jpg" />
+                        <img src="{{asset('assets/frontend/img/blog3.jpg')}}" />
                     </div>
                     <div class="dtls-on">
                         <h4>Plastic Pollution</h4>
@@ -454,7 +454,7 @@
             <div class="col-md-4 col-xl-3">
                 <div class="blog_content">
                     <div class="on-inimg">
-                        <img src="img/blog4.jpg" />
+                        <img src="{{asset('assets/frontend/img/blog4.jpg')}}" />
                     </div>
                     <div class="dtls-on">
                         <h4>Menstrual hygiene has been a matter of serious concern in India</h4>

@@ -7,25 +7,24 @@
     @if(Session::has('fail'))
     <div class="alert alert-danger">{{Session::get('fail')}}</div>
     @endif
-    <div class="text-right mb-2 mt-4">
+    <div class="text-right mb-2 mt-4 add-btn">
         <a href="/admin/add-banner" class="btn btn-primary btn-sm">Add</a>
     </div>
 <div class="card mb-4">
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
-        Banner Management List
+        {{ $title }}
     </div>
     <div class="card-body">
         <table id="datatablesSimple">
             <thead>
                 <tr>
-                    <th>Image1</th>
-                    <th>Image2</th>
-                    <th>Image3</th>
-                    <th>Image4</th>
-                    <th>Image5</th>
-                    <th>Status</th>
+                    <th>Title</th>
                     <th>Page</th>
+                    <th>type</th>
+                    <th>Image</th>
+                    <th>Sequence</th>
+                    <th>Status</th>
                     <th>Created Date</th>
                     <th>Updated Date</th>
                     <th>Action</th>
@@ -33,13 +32,12 @@
             </thead>
             <tfoot>
                 <tr>
-                    <th>Image1</th>
-                    <th>Image2</th>
-                    <th>Image3</th>
-                    <th>Image4</th>
-                    <th>Image5</th>
-                    <th>Status</th>
+                    <th>Title</th>
                     <th>Page</th>
+                    <th>type</th>
+                    <th>Image</th>
+                    <th>Sequence</th>
+                    <th>Status</th>
                     <th>Created Date</th>
                     <th>Updated Date</th>
                     <th>Action</th>
@@ -49,13 +47,12 @@
                 @if (!$banners->isEmpty())
                 @foreach ($banners as $banner)
                 <tr>
-                    <td><img src="/uploads/images/{{ $banner->image1 }}" width="50px" alt="image1" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->image1)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('banners', {{ $banner->id }}, 'image1')"></i>@endif</td>
-                    <td><img src="/uploads/images/{{ $banner->image2 }}" width="50px" alt="image2" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->image2)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('banners', {{ $banner->id }}, 'image2')"></i>@endif</td>
-                    <td><img src="/uploads/images/{{ $banner->image3 }}" width="50px" alt="image3" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->image3)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('banners', {{ $banner->id }}, 'image3')"></i>@endif</td>
-                    <td><img src="/uploads/images/{{ $banner->image4 }}" width="50px" alt="image4" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->image4)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('banners', {{ $banner->id }}, 'image4')"></i>@endif</td>
-                    <td><img src="/uploads/images/{{ $banner->image5 }}" width="50px" alt="image5" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->image5)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('banners', {{ $banner->id }}, 'image5')"></i>@endif</td>
+                    <td>{{ $banner->banner_title }}</td>
+                    <td>{{ $banner->banner_page }}</td>
+                    <td>{{ $banner->banner_type }}</td>
+                    <td><img src="/uploads/images/{{ $banner->banner_image }}" width="50px" alt="image" onerror="this.onerror=null;this.src='/uploads/images/no-image.png'">@if($banner->banner_image)<i class="fa fa-remove img-remove" title="Remove" onclick="removeImage('Banners', {{ $banner->id }}, 'banner_image')"></i>@endif</td>
+                    <td>{{ $banner->sequence }}</td>
                     <td>{{ $banner->status }}</td>
-                    <td>{{ $banner->type }}</td>
                     <td>{{ $banner->created_at }}</td>
                     <td>{{ $banner->updated_at }}</td>
                     <td>
@@ -66,7 +63,7 @@
                 @endforeach
                 @else
                 <tr>
-                    <td colspan="6">Records Not Found</td>
+                    <td colspan="9">Records Not Found</td>
                 </tr>
                 @endif
             </tbody>

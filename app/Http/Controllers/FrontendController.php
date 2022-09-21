@@ -4,14 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Banner;
-use App\Models\PageOnMouceHover;
-use App\Models\Form;
-use App\Models\HomePageCms;
-use App\Models\User;
-use App\Models\DesignCenterCms;
-use App\Models\BlogManagement;
-use App\Models\AudioCalculator;
-use App\Models\ServiceManagement;
+use App\Models\Organisation;
+use App\Models\Testimonials;
+use App\Models\Gallery;
 use Illuminate\Support\Str;
 
 class FrontendController extends Controller
@@ -28,6 +23,48 @@ class FrontendController extends Controller
 
     public function activities(){
         return view("pages.activities");
+    }
+
+    public function activitiesDetails(){
+        return view("pages.activities-details");
+    }
+
+    public function blog(){
+        return view("pages.blog");
+    }
+
+    public function contact(){
+        return view("pages.contact");
+    }
+
+    public function environmentInitiative(){
+        return view("pages.environment-initiative");
+    }
+
+    public function gallery(){
+        $banner = Banner::where('status', 'ACTIVE')->where('banner_type', 'ADVERTISE')->where('banner_page', 'GALLERY')->first();
+        $gallery = Gallery::where('status', 'ACTIVE')->orderBy('sequence', 'ASC')->get();
+        return view("pages.gallery")->with('banner', $banner)->with('gallery', $gallery);
+    }
+
+    public function joinVolunteer(){
+        return view("pages.join-volunteer");
+    }
+
+    public function organisation(){
+        $banner = Banner::where('status', 'ACTIVE')->where('banner_type', 'ADVERTISE')->where('banner_page', 'ORGANISATION')->first();
+        $organisation = Organisation::where('status', 'ACTIVE')->orderBy('id', 'DESC')->first();
+        return view("pages.organisation")->with('banner', $banner)->with('organisation', $organisation);
+    }
+
+    public function ourTeam(){
+        return view("pages.our-team");
+    }
+
+    public function testimonials(){
+        $banner = Banner::where('status', 'ACTIVE')->where('banner_type', 'ADVERTISE')->where('banner_page', 'TESTIMONIALS')->first();
+        $testimonial = Testimonials::where('status', 'ACTIVE')->orderBy('sequence', 'ASC')->get();
+        return view("pages.testimonials")->with('banner', $banner)->with('testimonial', $testimonial);
     }
 
 
